@@ -1,6 +1,6 @@
 # brunobeltre.com
 
-Testing deploy in vercel application built in nextjs
+Personal Portfolio
 
 **preview**
 
