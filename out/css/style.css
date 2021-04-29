@@ -1,0 +1,241 @@
+body {
+       background-color: rgb(24, 25, 26);
+       font-family: Consolas;
+}
+
+#nprogress .bar {
+       height: 3px !important;
+       background: rgb(4%, 37%, 84%) !important;
+}
+
+.text-description {
+       color: rgb(172, 172, 172);
+       font-size: 12px;
+}
+
+span {
+       font-size: 14px;
+}
+
+#nprogress .spinner-icon {
+       border-top-color: rgb(52, 53, 54) !important;
+       border-left-color: rgb(52, 53, 54) !important;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+       width: 12px;
+       height: 12px;
+       background-color: rgba(36, 37, 38, 0.466) !important;
+}
+
+::-webkit-scrollbar-thumb {
+       background: rgb(52, 53, 54);
+       border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+       background: rgb(95, 95, 95);
+}
+
+.btn {
+       font-family: Arial;
+}
+
+.myfooter {
+       background-color: rgb(70, 70, 70);
+}
+
+.myfooter:hover {
+       background-color: rgb(80, 80, 80);
+}
+
+.container {
+}
+
+.socials {
+       display: block;
+       font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p {
+       font-family: Verdana;
+       color: white;
+}
+
+.card-content {
+       color: white;
+       background-color: rgb(36, 37, 38);
+       border: 2px solid rgba(53, 54, 54, 0.247);
+       box-shadow: 0px 2px 4px 0px rgba(167, 167, 167, 0.123);
+       transition: 0.3s;
+}
+
+.card-content:hover {
+       border: 2px solid rgb(53, 54, 54);
+       box-shadow: 0px 4px 8px 0px rgba(167, 167, 167, 0.2);
+}
+
+.card-project {
+       border-radius: 10px;
+       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.repo {
+       background-color: rgb(59, 59, 59);
+       border: 3px solid rgb(31, 32, 32);
+       border-radius: 10px;
+}
+
+.repo:hover {
+       background-color: rgb(70, 70, 70);
+       border: 3px solid rgb(35, 35, 35);
+       border-radius: 10px;
+}
+
+.myphoto {
+       width: 170px;
+       height: 170px;
+       border-radius: 50%;
+       border: 5px solid rgba(31, 32, 32, 0);
+}
+
+.myphoto:hover {
+       border: 5px solid rgb(52, 53, 53);
+}
+
+.myphoto-2 {
+       width: 40px;
+       height: 40px;
+       border-radius: 50%;
+}
+
+.myphoto-2:hover {
+}
+
+.navbar {
+       height: 60px;
+       background-color: rgb(36, 37, 38) !important;
+       box-shadow: 1px 1px 1px rgba(129, 129, 129, 0.2);
+}
+
+.profile-nav {
+       padding: 3px;
+       border-radius: 100px;
+       background-color: rgba(255, 255, 255, 0.034);
+}
+
+.profile-nav:hover {
+       padding: 3px;
+       border-radius: 20px;
+       background-color: rgba(255, 255, 255, 0.11);
+}
+
+.myname-nav {
+       color: white;
+       font-size: 16px;
+}
+
+.myname-nav:hover {
+       text-decoration: none;
+       color: white;
+       font-size: 16px;
+}
+
+.text-about {
+       border-left: 5px solid rgb(83, 83, 83);
+       font-family: Verdana;
+       padding: 8px;
+       font-size: 17px;
+       color: rgb(185, 185, 185);
+}
+
+.text-about:hover {
+       border-left: 5px solid rgb(255, 255, 255);
+       font-family: Verdana;
+       padding: 8px;
+       font-size: 17px;
+       color: rgb(255, 255, 255);
+}
+
+.pad.w {
+       box-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 0px 0 #b9b9b9,
+              0 5px 0 rgba(125, 125, 125, 0.2), 0 6px 1px rgba(0, 0, 0, 0.2),
+              0 0 5px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.2),
+              0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2),
+              0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.2),
+              0 0 4px white, 0 0px 3px white,
+              1px 1px 5px rgba(255, 155, 0, 0.37),
+              1px 1px 10px rgba(102, 60, 0, 0.5);
+}
+
+a {
+       text-decoration: none;
+       color: rgb(38, 125, 238);
+}
+
+a:hover {
+       text-decoration: underline;
+       color: rgb(44, 123, 226);
+}
+
+.a-github {
+       color: rgb(49, 199, 99);
+}
+
+.a-github:hover {
+       color: rgb(28, 129, 62);
+}
+
+footer {
+       background-color: rgb(30, 30, 30);
+}
+
+.language {
+       font-size: 14px;
+       color: rgb(180, 180, 180);
+}
+
+.language:hover {
+       font-size: 14px;
+       color: rgb(180, 180, 180);
+}
+
+.language-img {
+       width: 70px;
+       height: 70px;
+}
+
+.item-languaje {
+       font-size: 20px;
+       background-color: rgba(24, 25, 26, 0.11);
+       border-radius: 5px;
+       padding-left: 15px;
+}
+
+.item-languaje:hover {
+       background-color: rgb(58, 58, 58);
+}
+
+.item-tech {
+       font-size: 16px;
+       background-color: rgba(24, 25, 26, 0.11);
+       border-radius: 5px;
+       padding-left: 15px;
+}
+
+.item-tech:hover {
+       background-color: rgb(50, 50, 50);
+}
+
+.bg-dark-field {
+       background-color: rgb(33, 33, 34) !important;
+       border-color: rgb(116, 116, 116);
+}

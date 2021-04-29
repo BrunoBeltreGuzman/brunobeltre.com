@@ -1,0 +1,9 @@
+{
+  "/404": "pages/404.html",
+  "/": "pages/index.html",
+  "/message": "pages/message.html",
+  "/repositories": "pages/repositories.html",
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js"
+}
