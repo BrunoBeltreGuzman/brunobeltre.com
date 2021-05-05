@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function custom404() {
        return (
-              <Layout>
+              <Layout nav={false} title={"Error 404"}>
                      <br />
                      <br />
                      <br />
