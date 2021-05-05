@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-export default function Nav() {
+export default function Nav(props) {
        return (
               <div>
                      <nav className="navbar navbar-dark bg-dark text-white fixed-top">
@@ -28,7 +28,7 @@ export default function Nav() {
                                                         className="btn btn-secondary btn-sm align-right"
                                                  >
                                                         <i className="fab fa-facebook-messenger"></i>{" "}
-                                                        Sent Message
+                                                        {props.lng.btnMessage1}
                                                  </a>
                                           </Link>
                                    </div>

@@ -39,16 +39,17 @@ export default function Layout(props) {
               };
        }, []);
 
-       console.log(props.nav);
+       //console.log(props.nav);
+       //console.log(props.lng);
 
        return (
               <div>
-                     <Partiars></Partiars>
+                     <Partiars title={props.title}></Partiars>
                      {props.nav == false ? (
                             <div></div>
                      ) : (
                             <div>
-                                   <Nav></Nav>
+                                   <Nav lng={props.lng}></Nav>
                             </div>
                      )}
                      <div> {props.children}</div>

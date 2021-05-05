@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 
-export default function Partiars() {
+export default function Partiars(props) {
        return (
               <Head>
                      <meta
@@ -14,7 +14,7 @@ export default function Partiars() {
                                    facere modi."
                      />
                      <link rel="icon" href="/img/favicon.png" />
-                     <title>Home | Bruno Beltre</title>
+                     <title>{props.title} | Bruno Beltre</title>
                      <link
                             rel="shortcut icon"
                             href="img/favicon.ico"

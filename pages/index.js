@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "../src/partiars/Layout";
 import Link from "next/link";
 import Repos from "../src/components/Repos";
+import EN from "../translate/en/global.json";
+import ES from "../translate/es/global.json";
+import getLng from "../src/util/useLng";
 
 export default function Index() {
+       const [lng, setLng] = useState(EN);
+       useEffect(() => {
+              setLng(getLng());
+       }, []);
+
        return (
-              <Layout nav={true}>
+              <Layout nav={true} lng={lng} title={lng.page1}>
                      <br />
                      <br />
                      <br />
@@ -26,18 +34,10 @@ export default function Index() {
                                                  <h1 className="display-5">
                                                         Bruno Beltre Guzman
                                                  </h1>
-                                                 <h4>
-                                                        greet("Hello World!!
-                                                        👋");
-                                                 </h4>
+                                                 <h4>{lng.funGreet}</h4>
                                                  <br />
                                                  <p className="text-about">
-                                                        I am a student of
-                                                        Computer Systems
-                                                        Engineering, I have
-                                                        experience in the
-                                                        development and design
-                                                        of information systems.{" "}
+                                                        {lng.about}{" "}
                                                  </p>
                                                  <br />
                                           </div>
@@ -47,7 +47,7 @@ export default function Index() {
                                           <div>
                                                  <h5 className="">
                                                         <i className="far fa-user-circle"></i>{" "}
-                                                        Follow Me Online Here:
+                                                        {lng.title1}
                                                  </h5>
                                                  <hr />
                                                  <a
@@ -79,25 +79,24 @@ export default function Index() {
                                           <div>
                                                  <h5>
                                                         <i className="far fa-lightbulb"></i>{" "}
-                                                        My main programming
-                                                        languages are:
+                                                        {lng.title2}
                                                  </h5>
                                                  <hr />
-                                                 <li className="item-languaje">
+                                                 <div className="item-languaje">
                                                         Java
-                                                 </li>
-                                                 <li className="item-languaje">
+                                                 </div>
+                                                 <div className="item-languaje">
                                                         JavaScript
-                                                 </li>
-                                                 <li className="item-languaje">
+                                                 </div>
+                                                 <div className="item-languaje">
                                                         TypeScript
-                                                 </li>
-                                                 <li className="item-languaje">
+                                                 </div>
+                                                 <div className="item-languaje">
                                                         PHP
-                                                 </li>
-                                                 <li className="item-languaje">
+                                                 </div>
+                                                 <div className="item-languaje">
                                                         SQL
-                                                 </li>
+                                                 </div>
                                                  <br />
                                           </div>
 
@@ -107,7 +106,7 @@ export default function Index() {
                                           <div>
                                                  <h5>
                                                         <i className="fas fa-tools"></i>{" "}
-                                                        Development Technology
+                                                        {lng.title3}
                                                  </h5>
                                                  <hr />
                                                  <div className="row">
@@ -147,9 +146,9 @@ export default function Index() {
 
                                                  <p className="text-secondary">
                                                         <i>
-                                                               And other
-                                                               development
-                                                               technologies.
+                                                               {
+                                                                      lng.desTechnology
+                                                               }
                                                         </i>
                                                  </p>
                                           </div>
@@ -160,7 +159,7 @@ export default function Index() {
                                           <div>
                                                  <h5>
                                                         <i className="fab fa-github"></i>{" "}
-                                                        GitHub Repositories:
+                                                        {lng.title4}
                                                  </h5>
                                                  <hr />
 
@@ -172,10 +171,7 @@ export default function Index() {
 
                                                  <br />
                                                  <Link href="/repositories">
-                                                        <a>
-                                                               View All
-                                                               Repositories
-                                                        </a>
+                                                        <a>{lng.allRepos1}</a>
                                                  </Link>
                                                  <br />
                                           </div>
@@ -183,40 +179,42 @@ export default function Index() {
                                           <br />
                                    </div>
                                    <div className="myfooter">
-                                          <div className="row p-3">
-                                                 <div className="col-md-10">
+                                          <div className="row  p-4">
+                                                 <div className="col-sm p-1">
                                                         <h5 className="text-left">
                                                                Bruno Beltre
                                                                Guzman
                                                         </h5>
-                                                        <a
-                                                               href=""
+                                                        <button
+                                                               onClick={function () {
+                                                                      setLng(
+                                                                             ES
+                                                                      );
+                                                                      localStorage.setItem(
+                                                                             "lng",
+                                                                             "ES"
+                                                                      );
+                                                               }}
                                                                className="language"
                                                         >
                                                                <i className="fas fa-globe-asia"></i>{" "}
-                                                               Espanol
-                                                        </a>{" "}
-                                                        <a
-                                                               href=""
+                                                               {lng.spanish}
+                                                        </button>
+                                                        <button
+                                                               onClick={function () {
+                                                                      setLng(
+                                                                             EN
+                                                                      );
+                                                                      localStorage.setItem(
+                                                                             "lng",
+                                                                             "EN"
+                                                                      );
+                                                               }}
                                                                className="language"
                                                         >
                                                                <i className="fas fa-flag-usa"></i>{" "}
-                                                               English
-                                                        </a>
-                                                 </div>
-                                                 <div className="col-md-2 text-right">
-                                                        <Link href="/message">
-                                                               <a
-                                                                      style={{
-                                                                             textDecoration:
-                                                                                    "none",
-                                                                      }}
-                                                                      className="btn btn-secondary btn-sm align-right"
-                                                               >
-                                                                      <i className="fab fa-facebook-messenger"></i>{" "}
-                                                                      Contact
-                                                               </a>
-                                                        </Link>
+                                                               {lng.english}
+                                                        </button>
                                                  </div>
                                           </div>
                                    </div>

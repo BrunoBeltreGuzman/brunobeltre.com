@@ -1,16 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "../src/partiars/Layout";
-import Head from "next/head";
+import EN from "../translate/en/global.json";
+import ES from "../translate/es/global.json";
+import getLng from "../src/util/useLng";
 
 export default function Index() {
+       const [lng, setLng] = useState(EN);
+       useEffect(() => {
+              setLng(getLng());
+       }, []);
        return (
-              <Layout>
+              <Layout nav={true} lng={lng} title={lng.page3}>
                      <br />
                      <br />
-                     <Head>
-                            {" "}
-                            <title>Message | Bruno Beltre</title>
-                     </Head>
                      <div className="container col-md-6 mx-auto">
                             <br />
                             <br />
@@ -20,14 +22,11 @@ export default function Index() {
                                           <div>
                                                  <h5>
                                                         <i className="fab fa-facebook-messenger"></i>{" "}
-                                                        Send Message:{" "}
+                                                        {lng.btnMessage1}:{" "}
                                                  </h5>
                                                  <hr />
                                                  <p className="text-about">
-                                                        Send me a email with
-                                                        your favorite email
-                                                        server or send me a
-                                                        quick message.
+                                                        {lng.desMessage}
                                                  </p>
                                                  <br />
                                                  <div className="">
@@ -41,11 +40,12 @@ export default function Index() {
                                                         <form className="col-md-6 bg bg-dark text-white">
                                                                <div className="mb-3">
                                                                       <label
-                                                                             for="exampleInputEmail1"
+                                                                             htmlFor="exampleInputEmail1"
                                                                              className="form-label"
                                                                       >
-                                                                             Your
-                                                                             Email:
+                                                                             {
+                                                                                    lng.inputEmail
+                                                                             }
                                                                       </label>
                                                                       <input
                                                                              type="email"
@@ -56,10 +56,13 @@ export default function Index() {
                                                                </div>
                                                                <div className="mb-3">
                                                                       <label
-                                                                             for="exampleFormControlTextarea1"
+                                                                             htmlFor="exampleFormControlTextarea1"
                                                                              className="form-label"
                                                                       >
-                                                                             Message:{" "}
+                                                                             {
+                                                                                    lng.inputMessage
+                                                                             }
+                                                                             :{" "}
                                                                       </label>
                                                                       <textarea
                                                                              className="form-control bg-dark text-white bg-dark-field"
@@ -74,8 +77,9 @@ export default function Index() {
                                                                       className="btn btn-primary"
                                                                >
                                                                       <i className="fab fa-facebook-messenger"></i>{" "}
-                                                                      Send
-                                                                      Message
+                                                                      {
+                                                                             lng.btnMessage1
+                                                                      }
                                                                </button>
                                                         </form>
                                                  </div>
@@ -83,28 +87,43 @@ export default function Index() {
                                           </div>
                                    </div>
                                    <div className="myfooter">
-                                          <div className="row p-3">
-                                                 <div className="col-md-10">
+                                          <div className="row  p-4">
+                                                 <div className="col-sm p-1">
                                                         <h5 className="text-left">
                                                                Bruno Beltre
                                                                Guzman
                                                         </h5>
-                                                        <a
-                                                               href=""
+                                                        <button
+                                                               onClick={function () {
+                                                                      setLng(
+                                                                             ES
+                                                                      );
+                                                                      localStorage.setItem(
+                                                                             "lng",
+                                                                             "ES"
+                                                                      );
+                                                               }}
                                                                className="language"
                                                         >
-                                                               <i className="fas fa-globe-asia"></i>
-                                                               Espanol
-                                                        </a>{" "}
-                                                        <a
-                                                               href=""
+                                                               <i className="fas fa-globe-asia"></i>{" "}
+                                                               {lng.spanish}
+                                                        </button>
+                                                        <button
+                                                               onClick={function () {
+                                                                      setLng(
+                                                                             EN
+                                                                      );
+                                                                      localStorage.setItem(
+                                                                             "lng",
+                                                                             "EN"
+                                                                      );
+                                                               }}
                                                                className="language"
                                                         >
                                                                <i className="fas fa-flag-usa"></i>{" "}
-                                                               English
-                                                        </a>
+                                                               {lng.english}
+                                                        </button>
                                                  </div>
-                                                 <div className="col-md-2 text-right"></div>
                                           </div>
                                    </div>
                             </div>

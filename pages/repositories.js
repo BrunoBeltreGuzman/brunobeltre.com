@@ -1,18 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "../src/partiars/Layout";
 import Link from "next/link";
 import Ropos from "../src/components/Repos";
-import Head from "next/head";
+import EN from "../translate/en/global.json";
+import ES from "../translate/es/global.json";
+import getLng from "../src/util/useLng";
 
 export default function Index() {
+       const [lng, setLng] = useState(EN);
+       useEffect(() => {
+              setLng(getLng());
+       }, []);
        return (
-              <Layout>
+              <Layout nav={true} lng={lng} title={lng.page2}>
                      <br />
                      <br />
-                     <Head>
-                            {" "}
-                            <title>Repositories | Bruno Beltre</title>
-                     </Head>
                      <div class="container col-md-6 mx-auto">
                             <br />
                             <br />
@@ -22,7 +24,7 @@ export default function Index() {
                                           <div>
                                                  <h5>
                                                         <i class="fab fa-github"></i>{" "}
-                                                        GitHub Repositories:
+                                                        {lng.title4}
                                                  </h5>
                                                  <hr />
                                                  <div class="">
@@ -31,7 +33,7 @@ export default function Index() {
                                                                target="_blank"
                                                                class=""
                                                         >
-                                                               See all on github{" "}
+                                                               {lng.allRepos2}{" "}
                                                         </a>
                                                  </div>
                                                  <br />
@@ -39,40 +41,42 @@ export default function Index() {
                                           </div>
                                    </div>
                                    <div class="myfooter">
-                                          <div class="row p-3">
-                                                 <div class="col-md-10">
+                                          <div className="row  p-4">
+                                                 <div className="col-sm p-1">
                                                         <h5 class="text-left">
                                                                Bruno Beltre
                                                                Guzman
                                                         </h5>
-                                                        <a
-                                                               href=""
-                                                               class="language"
+                                                        <button
+                                                               onClick={function () {
+                                                                      setLng(
+                                                                             ES
+                                                                      );
+                                                                      localStorage.setItem(
+                                                                             "lng",
+                                                                             "ES"
+                                                                      );
+                                                               }}
+                                                               className="language"
                                                         >
-                                                               <i class="fas fa-globe-asia"></i>{" "}
-                                                               Espanol
-                                                        </a>
-                                                        <a
-                                                               href=""
-                                                               class="language"
+                                                               <i className="fas fa-globe-asia"></i>{" "}
+                                                               {lng.spanish}
+                                                        </button>
+                                                        <button
+                                                               onClick={function () {
+                                                                      setLng(
+                                                                             EN
+                                                                      );
+                                                                      localStorage.setItem(
+                                                                             "lng",
+                                                                             "EN"
+                                                                      );
+                                                               }}
+                                                               className="language"
                                                         >
-                                                               <i class="fas fa-flag-usa"></i>{" "}
-                                                               English
-                                                        </a>
-                                                 </div>
-                                                 <div class="col-md-2 text-right">
-                                                        <Link href="/message">
-                                                               <a
-                                                                      style={{
-                                                                             textDecoration:
-                                                                                    "none",
-                                                                      }}
-                                                                      className="btn btn-secondary btn-sm align-right"
-                                                               >
-                                                                      <i className="fab fa-facebook-messenger"></i>{" "}
-                                                                      Contact
-                                                               </a>
-                                                        </Link>
+                                                               <i className="fas fa-flag-usa"></i>{" "}
+                                                               {lng.english}
+                                                        </button>
                                                  </div>
                                           </div>
                                    </div>
