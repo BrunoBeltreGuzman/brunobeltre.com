@@ -17,5 +17,7 @@
        "inputMessage": "Message",
        "page1": "Home",
        "page2": "Repositories",
-       "page3": "Contact"
+       "page3": "Contact",
+       "dark": "Dark",
+       "light": "Light"
 }

@@ -1,0 +1,244 @@
+.body {
+       background-color: rgb(240, 242, 245);
+       font-family: Consolas;
+}
+
+.container {
+       background-color: rgb(240, 242, 245);
+       font-family: Consolas;
+}
+
+#nprogress .bar {
+       height: 3px !important;
+       background: rgb(4%, 37%, 84%) !important;
+}
+
+.textDescription {
+       color: rgb(49, 49, 49);
+       font-size: 12px;
+}
+
+.span {
+       font-size: 14px;
+}
+
+#nprogress .spinner-icon {
+       border-top-color: rgb(52, 53, 54) !important;
+       border-left-color: rgb(52, 53, 54) !important;
+}
+
+.btn {
+       font-family: Arial;
+}
+
+.myfooter {
+       background-color: rgb(207, 207, 207);
+}
+
+.myfooter:hover {
+       background-color: rgb(202, 202, 202);
+}
+
+.container {
+}
+
+.socials {
+       display: block;
+       font-size: 16px;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+.a,
+.p {
+       font-family: Verdana;
+       color: rgb(24, 24, 24);
+}
+
+.util {
+       font-family: Verdana;
+       color: rgb(24, 24, 24);
+}
+
+.cardContent {
+       color: rgb(37, 37, 37);
+       background-color: rgb(255, 255, 255);
+       border: 2px solid rgb(230, 230, 230);
+       box-shadow: 0px 1px 2px 0px rgba(167, 167, 167, 0.123);
+       transition: 0.3s;
+}
+
+.cardContent:hover {
+       border: 2px solid rgba(196, 196, 196, 0.781);
+       box-shadow: 0px 2px 4px 0px rgba(56, 56, 56, 0.2);
+}
+
+.cardProject {
+       border-radius: 10px;
+       box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.repo {
+       background-color: rgb(255, 255, 255);
+       border: 2px solid rgb(224, 224, 224);
+       border-radius: 10px;
+}
+
+.repo:hover {
+       background-color: rgb(245, 245, 245);
+       border: 2px solid rgb(200, 200, 200);
+       border-radius: 10px;
+}
+
+.myphoto {
+       width: 170px;
+       height: 170px;
+       border-radius: 50%;
+       border: 5px solid rgba(190, 190, 190, 0.548);
+}
+
+.myphoto:hover {
+       border: 5px solid rgb(172, 172, 172);
+}
+
+.myphoto2 {
+       width: 40px;
+       height: 40px;
+       border-radius: 50%;
+}
+
+.myphoto2:hover {
+}
+
+.navbar {
+       height: 60px;
+       background-color: rgb(255, 255, 255) !important;
+       box-shadow: 1px 1px 1px rgba(121, 121, 121, 0.2);
+}
+
+.profileNav {
+       padding: 3px;
+       border-radius: 100px;
+       background-color: rgba(105, 105, 105, 0.158);
+}
+
+.profileNav:hover {
+       padding: 3px;
+       background-color: rgba(22, 22, 22, 0.158);
+}
+
+.mynameNav {
+       color: rgb(0, 0, 0);
+       font-size: 16px;
+}
+
+.mynameNav:hover {
+       text-decoration: none;
+       color: rgb(0, 0, 0);
+}
+
+.textAbout {
+       border-left: 5px solid rgb(184, 184, 184);
+       font-family: Verdana;
+       padding: 8px;
+       font-size: 17px;
+       color: rgb(51, 51, 51);
+}
+
+.textAbout:hover {
+       border-left: 5px solid rgb(0, 0, 0);
+       font-family: Verdana;
+       padding: 8px;
+       font-size: 17px;
+       color: rgb(0, 0, 0);
+}
+
+.pad.w {
+       box-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 0px 0 #b9b9b9,
+              0 5px 0 rgba(125, 125, 125, 0.2), 0 6px 1px rgba(0, 0, 0, 0.2),
+              0 0 5px rgba(0, 0, 0, 0.2), 0 1px 3px rgba(0, 0, 0, 0.2),
+              0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.2),
+              0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.2),
+              0 0 4px white, 0 0px 3px white,
+              1px 1px 5px rgba(255, 155, 0, 0.37),
+              1px 1px 10px rgba(102, 60, 0, 0.5);
+}
+
+.a {
+       text-decoration: none;
+       color: rgb(38, 125, 238);
+}
+
+.a:hover {
+       text-decoration: underline;
+       color: rgb(44, 123, 226);
+}
+
+.aGithub {
+       color: rgb(49, 199, 99);
+}
+
+.aGithub:hover {
+       color: rgb(28, 129, 62);
+}
+
+.language {
+       color: rgb(85, 85, 85);
+}
+
+.language:hover {
+       color: rgb(58, 58, 58);
+       text-decoration: underline;
+}
+
+.languageImg {
+       width: 70px;
+       height: 70px;
+}
+
+.itemLanguaje {
+       font-size: 19px;
+       background-color: rgba(112, 112, 112, 0.11);
+       border-radius: 5px;
+       padding-left: 15px;
+       margin: 5px;
+}
+
+.itemLanguaje:hover {
+       background-color: rgba(0, 0, 0, 0.11);
+}
+
+.itemTech {
+       font-size: 16px;
+       background-color: rgba(112, 112, 112, 0.11);
+       border-radius: 5px;
+       padding-left: 15px;
+       margin: 3px;
+}
+
+.itemTech:hover {
+       background-color: rgba(0, 0, 0, 0.11);
+}
+
+.bgDarkField {
+       background-color: rgb(33, 33, 34) !important;
+       border-color: rgb(116, 116, 116);
+}
+
+.bgForm {
+       background-color: transparent !important;
+}
+
+.label {
+       color: rgb(0, 0, 0);
+}
+
+.bgField {
+       background-color: rgb(243, 243, 243) !important;
+       color: black;
+       border: 2px solid rgb(163, 163, 163);
+}

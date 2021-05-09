@@ -21,19 +21,14 @@ Router.events.on("routeChangeError", () => NProgress.done());
 
 export default function Layout(props) {
        const router = useRouter();
-
        useEffect(() => {
               const handleRouteChange = (url) => {
                      console.log(url);
                      NProgress.start();
               };
-
               router.events.on("routeChangeStart", handleRouteChange);
-
               router.events.on("routeChangeComplete", () => NProgress.done());
-
               router.events.on("routeChangeError", () => nProgress.done());
-
               return () => {
                      router.events.off("routeChangeStart", handleRouteChange);
               };
@@ -43,13 +38,16 @@ export default function Layout(props) {
        //console.log(props.lng);
 
        return (
-              <div>
+              <div className={props.theme.container}>
                      <Partiars title={props.title}></Partiars>
                      {props.nav == false ? (
                             <div></div>
                      ) : (
                             <div>
-                                   <Nav lng={props.lng}></Nav>
+                                   <Nav
+                                          lng={props.lng}
+                                          theme={props.theme}
+                                   ></Nav>
                             </div>
                      )}
                      <div> {props.children}</div>

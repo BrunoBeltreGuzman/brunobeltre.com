@@ -4,15 +4,36 @@ import Link from "next/link";
 export default function Nav(props) {
        return (
               <div>
-                     <nav className="navbar navbar-dark bg-dark text-white fixed-top">
+                     <nav
+                            className={
+                                   "navbar navbar-dark bg-dark text-white fixed-top " +
+                                   props.theme.navbar
+                            }
+                     >
                             <div className="container col-md-6 mx-auto">
-                                   <div className="profile-nav">
+                                   <div
+                                          className={
+                                                 "profile-nav " +
+                                                 props.theme.profileNav
+                                          }
+                                   >
                                           <Link href="/">
-                                                 <a className="myname-nav">
+                                                 <a
+                                                        className={
+                                                               "myname-nav " +
+                                                               props.theme
+                                                                      .mynameNav
+                                                        }
+                                                 >
                                                         <img
                                                                src="img/pp.jpeg"
                                                                alt=""
-                                                               className="myphoto-2"
+                                                               className={
+                                                                      "myphoto-2 " +
+                                                                      props
+                                                                             .theme
+                                                                             .myphoto2
+                                                               }
                                                         />
                                                         {" Bruno "}{" "}
                                                  </a>

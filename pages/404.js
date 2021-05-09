@@ -1,10 +1,25 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "../src/partiars//Layout";
 import Link from "next/link";
 
+import EN from "../translate/en/global.json";
+import ES from "../translate/es/global.json";
+import getLng from "../src/util/useLng";
+
+import light from "../styles/light.module.css";
+import dark from "../styles/dark.module.css";
+import getTheme from "../src/util/useTheme";
+
 export default function custom404() {
+       const [lng, setLng] = useState(EN);
+       const [theme, setTheme] = useState(dark);
+       useEffect(() => {
+              setLng(getLng());
+              setTheme(getTheme());
+       }, []);
+
        return (
-              <Layout nav={false} title={"Error 404"}>
+              <Layout nav={false} title={"Error 404"} lng={lng} theme={theme}>
                      <br />
                      <br />
                      <br />

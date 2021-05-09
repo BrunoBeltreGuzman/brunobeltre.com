@@ -28,7 +28,11 @@ export default function Repos(props) {
        } else {
               return (
                      <div>
-                            <Repo items={items} limit={props.limit}></Repo>
+                            <Repo
+                                   items={items}
+                                   limit={props.limit}
+                                   theme={props.theme}
+                            ></Repo>
                      </div>
               );
        }
