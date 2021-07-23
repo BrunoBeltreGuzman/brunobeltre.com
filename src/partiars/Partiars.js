@@ -23,7 +23,7 @@ export default function Partiars(props) {
 
                      <link
                             rel="stylesheet"
-                            href="/lib/fontawesome5/css/all.css"
+                            href="/lib/fontawesome5/css/all.min.css"
                      />
 
                      {/* <!-- Bootstrap 5 -->*/}

@@ -11,7 +11,8 @@
               "dev": "next",
               "build": "next build",
               "start": "next start",
-              "export": "next export"
+              "export": "next export",
+              "init": "npm i && next"
        },
        "keywords": [],
        "author": "",

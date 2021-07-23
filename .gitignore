@@ -3,3 +3,15 @@ next
 .next
 *.log
 out
+
+/node_modules
+/next
+/.next
+/*.log
+/out
+
+./node_modules
+./next
+./.next
+./*.log
+./out
