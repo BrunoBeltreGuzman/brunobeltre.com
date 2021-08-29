@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+       <!-- title and favicon -->
+       <title>Chat | Bruno Beltre</title>
+       <link rel="shortcut icon" href="public/img/favicon.ico" type="image/x-icon">
+
+       <!-- fontawesome 5 -->
+       <link rel="stylesheet" href="public/lib/fontawesome5/css/all.css">
+
+       <!-- Bootstrap 5 -->
+       <link rel="stylesheet" href="public/lib/bootstrap5/css/bootstrap.min.css">
+
+       <!-- Css -->
+       <link rel="stylesheet" href="public/css/style.css">
+       <link rel="stylesheet" href="public/css/buttons.css">
+       <link rel="stylesheet" href="public/css/container.css">
+       <link rel="stylesheet" href="public/css/nav.css">
+       <link rel="stylesheet" href="public/css/texts.css">
+       <link rel="stylesheet" href="public/css/others/chat.css">
+       <link rel="stylesheet" href="public/css/bootstrap.css">
+
+
+</head>
+
+<body>
+
+       <div class="container">
+              <nav class="navbar navbar-dark bg-dark text-white fixed-top ">
+                     <div class="container col-md-7 mx-auto">
+                            <ul class="nav">
+                                   <li class="nav-item">
+                                          <a class="nav-link btn-secondary-3 item pl-4 pr-4 btn-sm" href=""><i
+                                                        class="fas fa-arrow-left"></i> Back</a>
+                                   </li>
+                            </ul>
+                            <a href="home.html"><img src="public/img/pp.jpeg" alt="Avatar" class="avatar"
+                                          data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to Home" />
+                            </a>
+                     </div>
+              </nav>
+       </div>
+
+       <br>
+
+       <br>
+       <br>
+
+       <div class="container col-md-7 mx-auto chat" style="">
+              <br>
+              <div class="horaPost-2 text-white p-0 m-0">
+                     hoy a las 4:20 pm
+              </div>
+              <hr class="text-white  p-0 m-0 mt-1">
+              <br>
+
+              <div class="preview">
+                     <img src="public/img/pp.jpeg" alt="Avatar" class="avatar-chat" />
+                     <div class="content-message">
+                            <div class="user-4">
+                                   brunodev
+                            </div>
+                            <div class="horaPost-2">
+                                   hoy a las 4:30 pm
+                            </div>
+                            <p class="message">
+                                   Hey {{name}}!! 👋<br>
+                                   Esta es mi Información de Contacto: <br>
+                                   <b>brunobeltrguzman@gmail.com</b> <br>
+                                   <b>809-494-1462</b> <br>
+                                   Puedes contactarme cuando quieras!! 😉
+                            </p>
+                     </div>
+              </div>
+
+              <div class="preview">
+                     <img src="public/img/pp.jpeg" alt="Avatar" class="avatar-chat" />
+                     <div class="content-message">
+                            <div class="user-4">
+                                   brunodev
+                            </div>
+                            <div class="horaPost-2">
+                                   hoy a las 4:30 pm
+                            </div>
+                            <p class="message">
+                                   También puede leer este código QR con mi Información de Contacto <br>
+                                   <img src="public/img/qr_preview.png" class="qr_preview" alt="">
+                            </p>
+                     </div>
+              </div>
+
+              <div class="preview">
+                     <img src="public/img/pp.jpeg" alt="Avatar" class="avatar-chat" />
+                     <div class="content-message">
+                            <div class="user-4">
+                                   brunodev
+                            </div>
+                            <div class="horaPost-2">
+                                   hoy a las 4:30 pm
+                            </div>
+                            <p class="message">
+                                   O escribe un mensaje aquí! 😏
+                            </p>
+
+                     </div>
+              </div>
+
+              <div class="preview">
+                     <img src="public/img/pp.jpeg" alt="Avatar" class="avatar-chat" />
+                     <div class="content-message">
+                            <div class="user-4">
+                                   brunodev
+                            </div>
+                            <p class="message">
+                                   Escribiendo...
+                            </p>
+                     </div>
+              </div>
+
+              <div class="preview">
+                     <div class="avatar-text">
+                            U
+                     </div>
+                     <div class="content-message">
+                            <div class="user-4">
+                                   {{username}}
+                            </div>
+                            <div class="horaPost-2">
+                                   hoy a las 4:30 pm
+                            </div>
+                            <p class="message">
+                                   Hola Bruno!
+                            </p>
+                     </div>
+              </div>
+       </div>
+
+
+
+       <div class="fixed-bottom bg-chat p-3">
+              <div class=" input-group-lg col-md-7 mx-auto">
+                     <input type="text" class="form-chat" id="chat" placeholder="Send a message to #Bruno 🤟"
+                            required="text">
+              </div>
+       </div>
+       <br>
+       <br>
+
+       <!-- Modal -->
+       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                     <div class="modal-content">
+
+                            <div class="modal-body">
+
+                                   <button type="button" class="btn-none btn-myclose" data-bs-dismiss="modal"
+                                          aria-label="Close"><i class="fas fa-times"></i></button>
+                                   <br>
+                                   <h5 class="text-center p-0 m-0"><i class="fas fa-eye"></i> This is a demo</h5>
+                                   <p class="text-muted text-center">This module of this project is under construction.
+                                   </p>
+
+                                   <div class="display-4 text-white text-center">
+                                          <i class="fas fa-laptop-code"></i>
+                                   </div>
+                                   <br>
+                                   <h6 class="text-white text-center">building...</h6>
+
+                                   <div class="modal-footer">
+                                          <button type="button" class="btn btn-primary"
+                                                 data-bs-dismiss="modal">Okay</button>
+                                   </div>
+                            </div>
+                     </div>
+              </div>
+       </div>
+
+
+
+       <!-- Proper -->
+       <script src="public/lib/popperjs/popper.min.js"></script>
+
+       <!-- Bootstrap 5 -->
+       <script src="public/lib/bootstrap5/js/bootstrap.min.js"></script>
+
+       <!-- JavaScript -->
+       <script src="public/js/tootips.js"></script>
+
+       <script>
+              var myModal = new bootstrap.Modal(document.getElementById("exampleModal"), {});
+              document.onreadystatechange = function () {
+                     myModal.show();
+              };
+       </script>
+
+</body>
+
+</html>

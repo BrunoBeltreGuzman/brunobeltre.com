@@ -1,0 +1,2 @@
+#init project
+npx degit sveltejs/template .

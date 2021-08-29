@@ -1,0 +1,70 @@
+/*==================== Buttons ==========================*/
+.btn-not-link {
+      text-decoration: none !important;
+}
+
+.btn-not-link:hover {
+      text-decoration: none !important;
+}
+
+.btn-discord {
+      background-color: transparent;
+      border: none;
+      text-align: center;
+      text-decoration: none;
+
+      display: inline-block;
+}
+
+.btn-none {
+      background-color: transparent;
+      border: none;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+}
+
+.btn-config {
+      color: black; /* Color del texto */
+      background-color: white;
+      position: fixed;
+      top: 30px;
+      left: 1250px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid black;
+      border-radius: 50%; /* Borde del boton */
+}
+.btn-config:hover {
+      text-decoration: none;
+      color: white; /* Color del texto */
+      background-color: rgb(85, 88, 93);
+}
+
+.btn {
+      font-family: Arial;
+}
+
+.config {
+      color: #ffffff; /* Color del texto */
+      border-radius: 5px; /* Borde del boton */
+      background-color: rgb(33, 36, 39);
+}
+
+.mycheck {
+      padding: 6px;
+}
+
+.label-mycheck {
+      font-size: 16px;
+}
+
+input:checked {
+      border: 1px solid rgb(255, 255, 255) !important;
+      background-color: rgb(48, 61, 206) !important;
+}
+
+input:checkbox {
+      border: 1px solid rgb(255, 255, 255) !important;
+      background-color: rgb(48, 61, 206) !important;
+}

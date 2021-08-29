@@ -1,0 +1,9 @@
+#install
+npm i -g live-server
+
+#Run
+live-server
+
+
+# Docs:
+https://carlosroso.com/how-to-add-live-reload-to-static-page/
