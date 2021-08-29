@@ -1,0 +1,282 @@
+/*==================== Texts ==========================*/
+.text-about {
+      padding-left: 8px;
+      font-size: 20px;
+      color: rgb(185, 185, 185);
+      border-left: 5px solid rgb(185, 185, 185);
+}
+
+.text-about:hover {
+      color: rgb(255, 255, 255);
+      border-left: 5px solid rgb(255, 255, 255);
+}
+
+.text-about-1 {
+      font-size: 22px;
+      color: rgb(185, 185, 185);
+}
+
+.text-about-1:hover {
+      color: rgb(255, 255, 255);
+}
+
+.message {
+      font-size: 14px;
+      color: rgb(206, 205, 205);
+      padding: 0px !important;
+      margin: 0px !important;
+}
+
+.message:hover {
+      color: rgb(255, 255, 255);
+}
+
+.text-description {
+      color: rgb(172, 172, 172);
+      font-size: 12px;
+}
+
+span {
+      font-size: 14px;
+}
+
+.socials {
+      display: block;
+      font-size: 17px;
+      font-weight: bold;
+      color: rgb(184, 184, 184) !important;
+}
+.socials {
+      color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+      color: white;
+      font-weight: bold;
+}
+
+.text-repo {
+      font-size: 14px;
+      color: white;
+      padding: 0px !important;
+      margin: 0px !important;
+      margin-bottom: 5px !important;
+}
+
+.title-repo {
+      color: white;
+      padding: 0px !important;
+      margin: 0px !important;
+}
+
+.bar-repo-link {
+      font-size: 12px;
+      color: rgb(212, 212, 212);
+}
+
+.language {
+      font-family: Verdana;
+      font-size: 14px;
+      color: rgb(184, 184, 184);
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+}
+
+.language:hover {
+      color: rgb(218, 218, 218);
+      text-decoration: underline;
+}
+
+.text-1 {
+      font-size: 22px;
+      color: rgb(185, 185, 185);
+}
+
+.text-2 {
+      font-size: 20px;
+      color: rgb(185, 185, 185);
+}
+
+.text-3 {
+      font-size: 18px;
+      color: rgb(185, 185, 185);
+}
+
+.text-4 {
+      font-size: 16px;
+      color: rgb(185, 185, 185);
+}
+
+.text-5 {
+      font-size: 14px;
+      color: rgb(185, 185, 185);
+}
+
+.text-1:hover,
+.text-2:hover,
+.text-3:hover,
+.text-4:hover,
+.text-5:hover {
+      color: rgb(255, 255, 255);
+}
+
+.lang-javascript {
+      color: #efd81d;
+      font-size: 12px;
+      font-weight: bold;
+}
+
+.lang-go {
+      color: #67d0de;
+      font-weight: bold;
+      font-size: 12px;
+}
+
+.lang-java {
+      color: rgb(250, 172, 42);
+      font-weight: bold;
+      font-size: 12px;
+}
+.lang-php {
+      color: #848ebb;
+      font-weight: bold;
+      font-size: 12px;
+}
+
+.lang-typescript {
+      color: #0176c5;
+      font-weight: bold;
+      font-size: 12px;
+}
+.lang-lite {
+      color: #dbdbdb;
+      font-weight: bold;
+      font-size: 12px;
+}
+
+.lang-html {
+      color: #e55a24;
+      font-weight: bold;
+      font-size: 12px;
+}
+.bar-repo {
+      font-size: 12px;
+      color: rgb(189, 189, 189);
+}
+
+.bar-repo:hover {
+      color: white;
+}
+
+.title-project {
+      color: #c8c8c8 !important;
+      padding: 0px !important;
+      margin: 0px !important;
+      font-size: 20px !important;
+}
+
+.title-project:hover {
+      color: #ffffff !important;
+}
+
+.fecha-project {
+      color: rgb(105, 105, 105);
+      padding: 0px !important;
+      margin: 0px !important;
+      font-size: 12px;
+      margin-bottom: 2px !important;
+}
+
+.fecha-exp {
+      color: rgb(105, 105, 105);
+      padding: 0px !important;
+      margin: 0px !important;
+      font-size: 13px !important;
+}
+
+.descripcion-project {
+      font-size: 13px;
+}
+
+.emoji-big {
+      font-size: 60px !important;
+      text-align: center;
+}
+
+.emoji-text {
+      text-align: center;
+      font-size: 16px !important;
+}
+
+.title-item {
+      padding: 0px !important;
+}
+
+.text-item {
+      margin: 0px !important;
+      padding: 0px !important;
+      font-size: 14px;
+      color: rgb(185, 185, 185);
+}
+
+.text-item:hover {
+      color: rgb(255, 255, 255);
+}
+
+.text-loading {
+      font-size: 12px !important;
+      width: 60%;
+      text-align: center;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+/*=======================================
+                            Media
+====================================*/
+
+@media only screen and (max-width: 600px) {
+      .emoji-big {
+            font-size: 55px !important;
+      }
+
+      .emoji-text {
+            font-size: 14px !important;
+      }
+
+      .bar-repo {
+            font-size: 10px;
+      }
+
+      .lang-javascript {
+            font-size: 10px;
+      }
+
+      .lang-go {
+            font-size: 10px;
+      }
+
+      .lang-java {
+            font-size: 10px;
+      }
+      .lang-php {
+            font-size: 10px;
+      }
+
+      .lang-typescript {
+            font-size: 10px;
+      }
+
+      .lang-html {
+            font-size: 1px;
+      }
+}
