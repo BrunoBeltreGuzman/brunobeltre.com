@@ -16,21 +16,6 @@
 
        onMount(async () => {
               try {
-                     loading = true;
-                     const response = await fetch(
-                            "https://api.github.com/users/BrunoBeltreGuzman/repos"
-                     );
-                     const json = await response.json();
-                     console.log(json);
-                     data = json;
-                     loading = false;
-              } catch (err) {
-                     console.log(err);
-                     loading = false;
-                     error = err;
-              }
-
-              try {
                      loading2 = true;
                      const response2 = await fetch(
                             "https://api.github.com/users/BrunoBeltreGuzman"
@@ -43,6 +28,21 @@
                      console.log(err);
                      loading2 = false;
                      error2 = err;
+              }
+
+              try {
+                     loading = true;
+                     const response = await fetch(
+                            "https://api.github.com/users/BrunoBeltreGuzman/repos"
+                     );
+                     const json = await response.json();
+                     console.log(json);
+                     data = json;
+                     loading = false;
+              } catch (err) {
+                     console.log(err);
+                     loading = false;
+                     error = err;
               }
        });
 </script>
