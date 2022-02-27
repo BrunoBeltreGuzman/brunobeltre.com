@@ -1,0 +1,151 @@
+body {
+       color: hsl(0, 0%, 83%) !important;
+       font-family: "Merriweather", "Georgia", serif !important;
+       font-weight: 400 !important;
+       word-wrap: break-word !important;
+       font-kerning: normal !important;
+       -moz-font-feature-settings: "kern", "liga", "clig", "calt" !important;
+       -ms-font-feature-settings: "kern", "liga", "clig", "calt" !important;
+       -webkit-font-feature-settings: "kern", "liga", "clig", "calt" !important;
+       font-feature-settings: "kern", "liga", "clig", "calt" !important;
+       background-color: rgb(47, 49, 54) !important;
+}
+
+.photo {
+       width: 150px;
+       width: 150px;
+       cursor: pointer;
+}
+
+a {
+       color: #1ea3f4 !important;
+}
+a:hover {
+       color: #1ea3f4 !important;
+}
+
+.socials {
+       display: block;
+       padding-bottom: 10px !important;
+}
+
+.img-socials {
+       width: 100px;
+       height: 100px;
+       padding: 0;
+       margin: 0;
+}
+
+/*==================== Texts ==========================*/
+.text-about {
+       padding-left: 8px;
+       font-size: 20px;
+       color: rgb(185, 185, 185);
+       border-left: 3px solid rgb(185, 185, 185);
+}
+
+.text-about:hover {
+       color: rgb(255, 255, 255);
+       border-left: 3px solid rgb(255, 255, 255);
+}
+
+.text-about-1 {
+       font-size: 22px;
+       color: rgb(185, 185, 185);
+}
+
+.text-about-1:hover {
+       color: rgb(255, 255, 255);
+}
+
+.message {
+       font-size: 14px;
+       color: rgb(206, 205, 205);
+       padding: 0px !important;
+       margin: 0px !important;
+}
+
+.message:hover {
+       color: rgb(255, 255, 255);
+}
+
+.text-description {
+       color: rgb(172, 172, 172);
+       font-size: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+       color: hsl(0, 0%, 94%) !important;
+}
+
+hr {
+       background-color: rgb(157, 157, 157) !important;
+}
+
+::-webkit-scrollbar {
+       width: 10px;
+}
+
+::-webkit-scrollbar-track {
+       margin: 0 0.5em;
+       background-color: rgb(52, 58, 63);
+       width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+       background: rgb(32, 34, 37);
+       border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+       background: rgb(22, 24, 27);
+}
+
+.icono {
+       padding-right: 15px;
+       font-size: 23px;
+       color: rgb(177, 177, 177);
+}
+
+.icono:hover {
+       cursor: pointer;
+}
+
+/*==================================================================*/
+.qr_preview {
+       width: 200px;
+       height: 200px;
+       padding: 10px;
+       margin-top: 5px;
+       background-color: white !important;
+       border-radius: 3px;
+}
+.message {
+       font-size: 14px;
+       color: rgb(206, 205, 205);
+}
+
+.message:hover {
+       color: rgb(255, 255, 255);
+}
+
+.preview {
+       color: white;
+       width: 100%;
+       padding: 0px !important;
+       margin: 0px !important;
+       padding-left: 10px !important;
+       padding-right: 10px !important;
+       padding-top: 10px !important;
+       padding-bottom: 10px !important;
+       background-color: rgb(49, 52, 58);
+}
+
+.preview:hover {
+       background-color: rgb(47, 49, 54);
+}
