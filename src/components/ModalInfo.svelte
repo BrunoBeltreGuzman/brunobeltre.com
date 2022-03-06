@@ -1,11 +1,18 @@
-<!-- Button Username -->
+<script>
+       function playSong() {
+              const audio = new Audio("audio/song2.mp3");
+              audio.play();
+       }
+</script>
 
+<!-- Button Username -->
 <img
        src="img/pp.jpeg"
        alt=""
        class="photo"
        data-bs-toggle="modal"
        data-bs-target="#exampleLogin"
+       on:click={playSong}
 />
 <br />
 
