@@ -12,6 +12,8 @@
               { noti: "..." },
               { noti: "look for the secret 🤓" },
               { noti: "Click on my photo to see my contact information 🤙" },
+              { noti: "👀" },
+              { noti: "..." },
               { noti: "Follow me online 😎" },
               { noti: "See my projects on Github 🌐" },
        ];
@@ -53,7 +55,7 @@
 
        setInterval(() => {
               showToast(notis[index].noti);
-              if (index == 4) {
+              if (index == 4 || index == 7) {
                      playSong();
                      navigator.vibrate(200);
               }

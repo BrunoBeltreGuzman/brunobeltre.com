@@ -15,8 +15,9 @@
 
        <p class="text-about">
               I'm Bruno Beltre, a software developer who enjoys learning new
-              programming technologies and sharing collaborative projects on <a
-                     href="https://github.com/BrunoBeltreGuzman">GitHub</a
+              programming technologies and sharing collaborative projects on <b
+                     ><a href="https://github.com/BrunoBeltreGuzman">GitHub</a
+                     ></b
               >. My favorite technologies right now are: React, React Native,
               Svelte, JavaScript/TypeScript, Java, Go, Python, PHP, MySQL, and
               MongoDB.
@@ -27,21 +28,23 @@
        <h5 class="">Follow Me Online Here:</h5>
        <div class="row">
               <div class="col">
-                     <a
-                            href="https://github.com/BrunoBeltreGuzman"
-                            target="_blank"
-                            class="socials">GitHub</a
-                     >
-                     <a
-                            href="https://www.linkedin.com/in/brunoingenierodesoftware/"
-                            target="_blank"
-                            class="socials">LinkedIn</a
-                     >
-                     <a
-                            href="https://twitter.com/Bruno19149482"
-                            target="_blank"
-                            class="socials">Twitter</a
-                     >
+                     <b>
+                            <a
+                                   href="https://github.com/BrunoBeltreGuzman"
+                                   target="_blank"
+                                   class="socials">GitHub</a
+                            >
+                            <a
+                                   href="https://www.linkedin.com/in/brunoingenierodesoftware/"
+                                   target="_blank"
+                                   class="socials">LinkedIn</a
+                            >
+                            <a
+                                   href="https://twitter.com/Bruno19149482"
+                                   target="_blank"
+                                   class="socials">Twitter</a
+                            >
+                     </b>
               </div>
               <div class="col" />
               <div class="col">
@@ -78,7 +81,7 @@
                                    /></a
                             >
                             <a
-                                   href="https://www.linkedin.com/in/brunobeltrguzmanprogramador/"
+                                   href="https://www.linkedin.com/in/bruno-software-developer/"
                                    target="_blank"
                                    ><i
                                           class="fab fa-linkedin-in icono"
