@@ -35,7 +35,7 @@
                                    class="socials">GitHub</a
                             >
                             <a
-                                   href="https://www.linkedin.com/in/brunoingenierodesoftware/"
+                                   href="https://www.linkedin.com/in/bruno-software-developer/"
                                    target="_blank"
                                    class="socials">LinkedIn</a
                             >
