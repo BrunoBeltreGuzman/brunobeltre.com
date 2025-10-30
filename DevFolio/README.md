@@ -1,2 +1,0 @@
-# devfolio
-Personal Portfolio
